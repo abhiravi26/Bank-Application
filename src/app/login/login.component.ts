@@ -27,9 +27,26 @@ export class LoginComponent implements OnInit {
   pswdChange(event:any){
     this.pswd=event.target.value
   }
-login(){
-  var acno=this.acno
-  var pswd=this.pswd
+// login(){
+//   var acno=this.acno
+//   var pswd=this.pswd
+//   let userDetails=this.userDetails
+//   if(acno in userDetails){
+//        if(pswd==userDetails[acno]['password'
+//         alert('login successfull')
+//        }
+//        else{
+//         alert('incorrect password')
+//        }
+//   }
+//   else{
+//     alert('user does not exist')
+//   }
+
+// }
+login(a:any,p:any){
+  var acno=a.value
+  var pswd=p.value
   let userDetails=this.userDetails
   if(acno in userDetails){
        if(pswd==userDetails[acno]['password']){
@@ -44,4 +61,5 @@ login(){
   }
 
 }
+
 }
